@@ -4,18 +4,22 @@ public class ASCIIart {
     
     public static void main(String[] args){
 
-         System.out.println("Which do you like more, cats or dogs?");
+        Scanner scan = new Scanner(System.in);
 
-         Scanner scan = new Scanner(System.in);
+       
+        while(true){
+            System.out.println("Which do you like more, cats or dogs?");
+            String input = scan.nextLine();
 
-        String input = scan.nextLine();
-
-        if(input.equals("cats") || input.equals("cat")){
-            System.out.println("Cat ASCII art here:");
-        } else if(input.equals("dogs") || input.equals("dog")){
-            System.out.println("Dog ASCII art here:");
-        } else {
-            System.out.println("You must choose between cats or dogs");
+            if(input.equalsIgnoreCase("cats") || input.equalsIgnoreCase("cat")){
+                System.out.println("Cat ASCII art here:");
+                break;
+            } else if(input.equalsIgnoreCase("dogs") || input.equalsIgnoreCase("dog")){
+                System.out.println("Dog ASCII art here:");
+                break;
+            } else {
+                System.out.println("You must choose between cats or dogs");
+            }
         }
     }
 }
