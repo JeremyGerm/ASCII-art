@@ -12,10 +12,15 @@ public class ASCIIart {
             String input = scan.nextLine();
 
             if(input.equalsIgnoreCase("cats") || input.equalsIgnoreCase("cat")){
-                System.out.println("Cat ASCII art here:");
+                System.out.println("Cat ASCII art here: \n /\\_/\\\r\n" + //
+                                        "( o.o )\r\n" + //
+                                        " > ^ <");
                 break;
             } else if(input.equalsIgnoreCase("dogs") || input.equalsIgnoreCase("dog")){
-                System.out.println("Dog ASCII art here:");
+                System.out.println("Dog ASCII art here:  \n  __      _\r\n" + //
+                                        "o'')}____//\r\n" + //
+                                        " `_/      )\r\n" + //
+                                        " (_(_/-(_/");
                 break;
             } else {
                 System.out.println("You must choose between cats or dogs");
