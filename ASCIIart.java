@@ -32,7 +32,7 @@ public class ASCIIart {
                                             "     |/");
                 break;
             } else {
-                System.out.println("You must choose between cats or dogs");
+                System.out.println("You must choose between cats, dogs or fish");
             }
         }
     }
