@@ -8,7 +8,7 @@ public class ASCIIart {
 
        
         while(true){
-            System.out.println("Which do you like more, cats, dogs or fish?");
+            System.out.println("Which do you like more, cats, dogs, fish, or spider?");
             String input = scan.nextLine();
 
             if(input.equalsIgnoreCase("cats") || input.equalsIgnoreCase("cat")){
@@ -22,7 +22,7 @@ public class ASCIIart {
                                         " `_/      )\r\n" + //
                                         " (_(_/-(_/");
                 break;
-            } else if(input.equalsIgnoreCase("fish")){
+            } else if(input.equalsIgnoreCase("fish") || input.equalsIgnoreCase("fish")){
                 System.out.println("Dog ASCII art here:\n     |\\    o\r\n" + //
                                             "    |  \\    o\r\n" + //
                                             "|\\ /    .\\ o\r\n" + //
@@ -31,8 +31,15 @@ public class ASCIIart {
                                             "    |  /\r\n" + //
                                             "     |/");
                 break;
+            } else if(input.equalsIgnoreCase("spider")){
+                System.out.println("Spider ASCII art here:");
+                System.out.println(" ||  ||  \r\n" +//
+                                   " \\()// \r\n" +//
+                                   "//(__)\\\r\n" +//
+                                   "||    ||\r\n");
+                break;
             } else {
-                System.out.println("You must choose between cats, dogs or fish");
+                System.out.println("You must choose between cats, dogs, fish or spider");
             }
         }
     }
